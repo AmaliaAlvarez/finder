@@ -1,0 +1,304 @@
+
+*paddin : espaciamiento Propiedad de espaciamiento externo
+	La propiedad CSS padding establece el espacio de relleno requerido por todos los lados de un elemento.
+ El área de padding es el espacio entre el contenido del elemento y su borde ( border ).
+No se permiten valores negativos.
+
+*strong : énfasis
+
+
+*display: in line-block : define si ocupa el 100% de la página o sólo su contenido,
+más alineamientos en este caso verticales, más márgenes,
+
+
+*text decoration,: elimina el subrayado------- text-decaration: none
+
+
+*margin (espaciamiento) 4 parámetros: El primero me define un margen, un espaciamiento interno hacia arriba, 
+El segundo a la derecha. 
+El tercero, hacia abajo, que también va a ser 0. y por último a la izquierda
+
+
+*position: absolute:  puedo posicionar mi elemento en cualquier lugar de la página.
+
+
+*main : etiqueta para el cuerpo de la página, o sea para el cuerpo del contenido de la página. 
+La etiqueta <main>, para el contenido principal de nuestra página.
+
+
+ *display in line:  en la propia inline yo no puedo configurar los espaciamientos ni los tamaños, o sea
+va a ocupar 100% del elemento, solo el espacio del elemento.
+
+
+ *inline-block:  me permite colocar los elementos en un formato horizontal, uno al lado de otro,
+ y también me permite configurar los espacios y las propiedades internas del elemento.
+
+
+*display block: me coloca los elementos
+ ocupando el 100% del espacio horizontal de nuestra página. 
+
+** font-weight: bold; NEGRITA**
+
+
+*** vertical-align: top; alineacion de los items vertical 
+
+* box-sizing  : es el tamaño de la caja, traduciendo, lo definimos como *border-box*, 
+
+
+
+
+entonces el borde de cada uno de los ítems será el límite del espacio que va a ser definido. ¿Qué quiere decir eso en la práctica?
+
+
+    ***border-color: black;
+    ***border-width: 2px;
+    ***border-style: solid; 
+
+***todo esto es lo mismo que:
+   ***border : 2px solid black
+
+
+ Que estos 20 pixeles que estamos colocando de espaciamiento interno no van a sobrepasar los 30% que definimos aquí del ancho, entonces, van a ser ingresados, van a ser contabilizados dentro de ese 30%.
+
+
+***nav a:hover{
+    color: #c78c19; 
+***    :hover    es para que cambie de color cuando te posicionas arriba de un texto que te lleve a otra página
+*******En el hover, mapeamos el comportamiento del mouse por encima del elemento, y podemos usar esto para descartar visualmente el elemento.
+
+
+***text-decoration: underline; con esto subrayo lo anterior
+
+
+****    :active, cuando un elemento está siendo activado por el usuario. clic del mouse
+
+*****¿Cómo agregamos una imagen de fondo en un elemento?  En el CSS, cuando hacemos referencia a la dirección de una imagen, usamos el valor url
+
+TABLA DE CARACTERES UNICODE  unicode-table.com    
+en esa paágina puedo econtrar caracteres como el de copyright o emojis
+
+*****La etiqueta     <label>       es una etiqueta para la entrada de datos para el         <input>.
+EJ
+            <label for="nombreapellido">Nombre y Apellido</label>
+            <input type="text" id="nombreapellido">
+
+*******¿Cuál es la propiedad de un input del tipo RADIO que necesito crear para que todos los elementos formen parte del mismo grupo?
+            La propiedad NAME solo se puede “completar” una vez, es por eso que, cuando seleccionamos uno de los ítems, se anula el otro, manteniendo solamente uno seleccionado.
+
+
+
+** Jerarquá en  CSS :  de mayor a menor:
+****  in line (1000)
+**** id (100)
+**** class (10)
+**** etiqueta (1)
+  ej form p = 1+102
+      .test =10 
+      p.test= 1+10 = 11
+
+Considerando el código de abajo:
+
+<p class="parrafo">
+
+p {
+    color: blue;
+}
+
+p.parrafo {
+    color: red;
+}
+
+.parrafo {
+    color: purple;
+}
+
+
+
+EL COLOR DE PARRAFO SERA *RED*
+
+********PLACEHOLDER placeholder : te aparece dentro del input para saber que hay que poner (sugerencia para completar los campos)
+Ej   placeholder="email@dominio.com"
+ dentro del email pone :  email@dominio.com
+
+
+****** checked : tilda una opción, el usuario puede destildarla, o elegir otra opción (Cómo dejar una opción marcada por padrón en nuestros input radio y checkbox a través del atributo checked.)
+
+
+****REQUIRED: Cuando agregamos la propiedad required, el navegador nos ayuda a validar si ese campo está rellenado.	
+
+ETIQUETA FIELDSET : agrupa items que pertenecen al mismo grupo. NO USA etiqueta <p> usa <legend> 
+
+
+***********************************es aconsejable, de buena práctica poner un texto alternativo en las imágenes usando alt=""  ******************************** el usuario no lo percibe, pero ayuda a encontrar mas rápido la imágen, más organizado
+
+
+                                   Algunos tipos de inputs para el celular: email, tel, number, password, date, datetime, month y search.
+
+
+transicion visual de un elemento= transition 1s (1 segundo)
+cursor pointer= pone la manito en el cursor
+Utilizamos la propiedad transform: scale() para aumentar un elemento proporcionalmente.
+
+
+ Una tabla está compuesta, cualquier tabla, si pensamos en una tabla de Excel por ejemplo, está compuesta de columnas y de filas. Para HTML existe una etiqueta específica que se llama table, del inglés tabla, y dentro de esta etiqueta nosotros definimos los table rows, las líneas de las tablas.
+
+[02:18] Y dentro de cada table row definimos los td que vendrían a ser las celdas, cada una de las celdas de nuestra tabla, de cada una de las líneas. Entonces, en este caso, cada línea, nuestra tabla tiene cuatro líneas: el título, el encabezado y los tres días: lunes, miércoles y viernes, y cada una de las líneas tiene dos columnas, entonces, serían dos células que abren y que cierran, dos td.
+
+table; tabla
+<tr> lineas de las tablas Filas
+< td> celdas de las tablas 
+
+                    		A crear una tabla HTML.
+
+			La etiqueta table, representa la tabla.
+
+			La etiqueta tr, representa la fila de la tabla.
+
+			La etiqueta td, representa la celda de la tabla.
+
+			La etiqueta thead, representa el encabezado de la tabla.
+
+			La etiqueta tbody, representa el cuerpo de la tabla.
+
+			La etiqueta th, representa la celda del encabezado de la tabla.
+
+			La etiqueta tfoot, representa el pie de página de la tabla.
+
+
+
+************* Para un bloque donde el contenido tiene el mismo significado, el mismo sentido, usamos una <section>*****************************
+
+-----------------------Se usa <id> cuando queremos alterar comportamientos
+-----------------------Se usa <class=> cuando queremos alterar los estilos, ejemplo tamaño
+
+/*/*/*/*/*/*/*/*/*/*/*  font-size: 2em; quiere decir va va a ser del doble de tamaño que tiene la fuente del navegador    /*/*/*/*/*/*/*/*/
+
+
+******propiedad float:  Para ello tenemos, existe una propiedad que se llama float, de flotar, de flotante, es como si nuestra imagen se despegara de la página, sin embargo deja una sombra, deja la sombra de esa imagen, y ese espacio, la sombra, es ocupado en la misma proporción, y en ese caso tenemos el texto redondeando a toda esa imagen. Y esa propiedad la usamos directo en nuestro CSS.
+
+********************* FLOAT Tanto el float:left como el float: right sirven para que el elemento se destaque en la pantalla, la superficie del elemento continúa siendo utilizada y los otros elementos de texto o elementos en línea se posicionan alrededor de él.
+
+
+/*/*/*/*//*/    linear-gradient: background: linear-gradient(orange, blue);
+pasa del naranja al azul , horizontal
+se puede en diagonal......pones en un angulo de 45 grados: linear-gradient: background: linear-gradient(45deg, orange, blue);
+
+en circulo , o circunferencia : 
+       background : radial-gradient (orange, blue);
+
+
+*******************Selectores avanzados*********************ej
+main > p {
+    background: red;
+}
+
+img + p {
+    background: yellow;
+}
+
+img ~ p {
+    background: green;
+}
+
+.principal p:not(#mision){
+    background: #c78c19;
+
+
+
+
+/*/*/*/*/*/*/ Selector > , para acceder a los hijos de determinado elemento. Por ejemplo, para acceder todos los p dentro del main:
+main > p {          }
+
+
+*******************Selector +, para acceder al primer hermano de determinado elemento. Por ejemplo, para acceder el primer p después de una img:
+img + p {
+}
+*********************Selector ~, para acceder a todos los hermanos de determinado elemento. Por ejemplo, para acceder todos los p después de una img:
+img ~ p {
+}
+***********************Selector not, para acceder a los elementos, excepto algunos. Por ejemplo, para acceder a todos los p dentro de main excepto el p que tiene id missao:
+main p:not(#missao) {
+}
+
+--------------------------------SOMBREADO sombras shadows--------------------------------
+                        box-shadow: 10px 10px 30px 5px black, -10px -10px yellow;
+
+box-shadow:inset 0 0 30px red      : sombreado rojo hacia adentro 
+
+text-shadow: 2px 2px red;   sombreado en texto
+
+
+
+ **************************RESPONSIVE*******************
+@media  screen and (max-width: 480px) {
+(si el navegador encuentra una página menor o igual a 480 píxeles, va a aplicar estas condiciones. )
+
+https://www.aluracursos.com/blog/organizar-estudio-y-portafolio-con-notion-en-alura
+
+
+
+
+------------------------------------- realizar redondeo de valores numéricos para eliminar posiciones decimales, las fórmulas matemáticas aprendidas fueron Math.round y Math.floor.-----------------------------------------------------------------
+Math.round como Math.floor las usamos para redondear valores, Math.round la usamos cuando queremos retornar el valor de un número redondeado al entero más cercano, y Math.floor cuando queremos redondear un número al máximo entero menor. Por ejemplo si quisiéramos redondear el número 27.83 con Math.round(27.87) el resultado sería 28 y con Math.floor(27.87) sería 27.
+
+
+----------------------------------------/-/-/--/-/-/- OPERADOR OR en js es || (dos barras verticales)
+
+------------------------------------------/-/-/-/-/-/-/-/ OPERADOR LOGICO AND en js es && (doble &)
+
+
+
+
+iteración FOR tiene tres parámetros (variable contador, ejemplo i = 0 ); i < que algo; tercer parámetro el incremental: i++
+
+			for ([expresion-inicial]; [condicion]; [expresion-final])sentencia
+
+
+toFixed, para que te aparezcan entre0 y 20 digitos
+
+
+********************/////**************************//////* capturar eventos a través del addEventListener.*/////***************************************///////********************************
+
+Ej                            var titulo = document.querySelector(".titulo");
+		titulo.addEventListener("click", mostrarMensaje);
+
+		function mostrarMensaje() {
+ 			console.log("ud hizo clic en el titulo");
+		}
+------------Función anónima.....
+  				botonAdicionar.addEventListener("click", function(){            /*Cuando haga click ejecuta esa funci´, no se repite y la función no se puede reutilizar
+    					console.log("ud hizo clic en el titulo");
+				});
+
+
+
+-----------------------Evitar comportamiento padrón-----------------
+ - - - - - - - - - - - - //    preventDefault();
+ej event.preventDefault();
+
+
+pasar event como parametro y el metodo preventDefault para que no cargue nuevamente la página
+ej
+ El comportamiento padrón de un form, cuando hacemos clic en un button o en un input submit, que están dentro del form, es enviar a cargar la página nuevamente. Para evitar este comportamiento, debemos llamar a la función de JavaScript que previene ese comportamiento padrón de ciertos elementos: event.preventDefault()
+
+
+-------------------------------------------- <tr> -------------------------------
+			El elemento HTML fila de tabla (table row) <tr> define una fila de celdas en una tabla.
+
+------------------------------------------- <td> ------------------------------
+			 El elemento HTML Celda de tabla ( <td> ) define la celda de una tabla que contiene datos. 
+
+GRADIENT paleta de colores
+
+
+
+
+https://code.visualstudio.com/
+https://nodejs.org/es/
+https://git-scm.com/downloads
+https://www.eclipse.org/downloads/
+https://www.oracle.com/java/technologies/downloads/
+
+
+
+K76QBXGD6NTG6YH
